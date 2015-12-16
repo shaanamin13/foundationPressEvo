@@ -41,13 +41,30 @@ get_header(); ?>
 
 </div>
 <div id="front-hero-3" role="banner">
+	<div class = "row">
+		<div class="large-4 columns">
+
+		</div>
+
+		<div class="large-8 columns">
+			<div class = "about-game">
+				<h1>Something is stirring in the land of Zenith...</h1>
+				<p>In EvoCreo, it’s up to you to guide the young Evoker in a quest to find their father. In order to do so, they’ll need to understand the history of the creatures known as Creos and take their place as an Evoker. Dare to see if you have what it takes?</p>
+			</div>
+		</div>
+
+	</div>
 
 </div>
+
 <div id="front-hero-4" role="banner">
 	<div class="row">
-		<h4 id="flex-video">Trailer</h4>
-		<div class="flex-video">
-			<iframe width="460" height="200" src="https://www.youtube.com/embed/BASw7bLZURo" frameborder="0" allowfullscreen></iframe>
+		<div class="large-12 columns">
+			<h4 id="flex-video">Trailer</h4>
+			<div class="flex-video">
+				<iframe width="75" height="50" src="https://www.youtube.com/embed/BASw7bLZURo" frameborder="0" allowfullscreen></iframe>
+			</div>
 		</div>
+		
 	</div>
 </div>
