@@ -1,6 +1,49 @@
 #front-hero-1 {
-
 	.marketing {
+
+		background-color: rgba(155, 198, 120, .78);
+		border-radius: 30px;
+
+
+
+	}
+
+	.tagline {
+
+		border-radius: 10px;
+		float:right;
+
+		padding: 25px;
+		text-align: center;
+		h4{
+
+			color: $white;
+			font-family: 'Aclonica';
+			font-size: 24px;
+		}
+		.button{
+			background-color: rgba(87, 97, 103, .29);
+			font-family: 'Aclonica';
+		}
+		.button:hover{
+			background-color: #90BD72;
+		}
+}
+	.appStore{
+		max-height: 45px;
+		margin-left: 10px;
+		margin-right: 10px;
+		@media #{$medium-up} {
+			max-height: 55px;
+			margin-left: 15px;
+			margin-right: 15px;
+
+
+		}
+
+
+}
+	.logo {
 		@include grid-row();
 		img{
 			max-height: 500px;
@@ -8,6 +51,8 @@
 			//position: fixed;
 
 		}
+
+
 	}
 
 
@@ -41,30 +86,6 @@
 			color: #fff;
 		}
 
-		#stargazers {
-			:before {
-				content: "\f09b";
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
-				color: #B4C9D1;
-				margin-right: rem-calc(8);
-			}
-		}
-
-		#twitter {
-			:before {
-				content: "\f099";
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
-				color: #B4C9D1;
-				margin-right: rem-calc(8);
-			}
-		}
-
 	}
 
 	.tagline {
@@ -79,6 +100,7 @@
 		}
 
 		@media screen and (min-width: 871px) {
+			float:right !important;
 			@include grid-column(5);
 		}
 	}
@@ -93,18 +115,20 @@
 			}
 
 			position: absolute;
-			top:rem-calc(21);
+			//top:rem-calc(21);
 		}
 
-		.download { margin-top: rem-calc(20); }
+		.download { }
 
 	}
 
   #front-hero-2 {
-
-  	.marketing {
-  		@include grid-row();
-  	}
+		#section-title{
+			font-size: 14px;
+			color: #83A281;
+			font-family:'Aclonica';
+			text-align: center;
+		}
 
   	@media #{$small-up} {
   		background: url("../images/evocreo/pantalla-4.png") no-repeat;
@@ -136,29 +160,7 @@
   			color: #fff;
   		}
 
-  		#stargazers {
-  			:before {
-  				content: "\f09b";
-  				font-family: FontAwesome;
-  				font-style: normal;
-  				font-weight: normal;
-  				text-decoration: inherit;
-  				color: #B4C9D1;
-  				margin-right: rem-calc(8);
-  			}
-  		}
 
-  		#twitter {
-  			:before {
-  				content: "\f099";
-  				font-family: FontAwesome;
-  				font-style: normal;
-  				font-weight: normal;
-  				text-decoration: inherit;
-  				color: #B4C9D1;
-  				margin-right: rem-calc(8);
-  			}
-  		}
 
   	}
 
@@ -179,7 +181,9 @@
 
   		h1 { font-weight: 500; }
 
-  		h1 a, h4 { color: #fff; }
+  		h1 a, h4 {
+
+			}
 
   		.fpmock img {
   			@media screen and (max-width: 870px) {
@@ -190,10 +194,22 @@
   			top:rem-calc(21);
   		}
 
-  		.download { margin-top: rem-calc(20); }
+			.screenshot-bg{
+				background-color: rgba(0, 0, 0, .25);
+				border-radius: 10px;
+				padding: 25px;
+				padding-left: 35px;
+				padding-right: 35px;
+			}
 
   	}
     #front-hero-3 {
+			#section-title{
+				font-size: 24px;
+				color: #000;
+				font-family:'Aclonica';
+				text-align: center;
+			}
 
     	.marketing {
     		@include grid-row();
@@ -230,29 +246,7 @@
     			color: #fff;
     		}
 
-    		#stargazers {
-    			:before {
-    				content: "\f09b";
-    				font-family: FontAwesome;
-    				font-style: normal;
-    				font-weight: normal;
-    				text-decoration: inherit;
-    				color: #B4C9D1;
-    				margin-right: rem-calc(8);
-    			}
-    		}
 
-    		#twitter {
-    			:before {
-    				content: "\f099";
-    				font-family: FontAwesome;
-    				font-style: normal;
-    				font-weight: normal;
-    				text-decoration: inherit;
-    				color: #B4C9D1;
-    				margin-right: rem-calc(8);
-    			}
-    		}
 
     	}
 
@@ -283,27 +277,52 @@
     			position: absolute;
     			top:rem-calc(21);
     		}
+				.about-game-bg-bg{
+					background-color: rgba(170, 204, 110, .8);
+					border-radius: 10px;
+					padding: 25px;
+					padding-left: 35px;
+					padding-right: 35px;
+				}
+
+				.about-game-bg{
+					background-color: rgba(250, 250, 250, .7);
+					border-radius: 10px;
+					padding: 25px;
+					padding-left: 35px;
+					padding-right: 35px;
+				}
+
 
     		.download { margin-top: rem-calc(20); }
 
     	}
       #front-hero-4 {
 
+				#section-title{
+					font-size: 14px;
+					color: #83A281;
+					font-family:'Aclonica';
+					text-align: center;
+					padding-top: 10px;
+
+				}
       	.marketing {
       		@include grid-row();
 
       	}
 
+
       	@media #{$small-up} {
       		background: url("../images/evocreo/textured_paper.png") repeat scroll 0 0 #074E68;
-      		padding: rem-calc(65%) 0;
+
       	//	margin: - rem-calc(32) 0 rem-calc(32);
       		position: relative;
       		text-align: left;
       	}
 
       	@media #{$medium-up} {
-      		height: rem-calc(500);
+      		height: rem-calc(700);
       	//	margin: - rem-calc(32) 0 rem-calc(72);
       	}
 
@@ -379,10 +398,19 @@
 
       		.download { margin-top: rem-calc(20); }
 
-          .about-game{
-            background-color:#000;
-          }
+					.trailer-bg{
+						background-color: rgba(0, 0, 0, .7);
+
+
+						padding-left: 35px;
+						padding-right: 35px;
+					}
 
       	}
 
 
+
+
+@media (max-width: 767px) {
+
+}
